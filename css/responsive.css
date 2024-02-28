@@ -1,0 +1,23 @@
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .main-navbar .header-logo img {
+        width: 220px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .top-header {
+        display: none;
+    }
+
+    .main-navbar {
+        padding: 12px 0;
+    }
+
+    .main-navbar .desktop.navigation-menu {
+        display: none;
+    }
+
+    .main-navbar .solid-bar {
+        display: block;
+    }
+}
