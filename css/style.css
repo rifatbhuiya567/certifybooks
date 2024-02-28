@@ -945,7 +945,20 @@ body {
 
 .page-action {
     padding: 24px 0;
+    color: var(--black_color);
     background-color: var(--secondary_color);
+}
+
+.page-action .title {
+    font-size: var(--h2);
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.page-action .sub-title {
+    font-size: var(--h4);
+    font-weight: 500;
+    line-height: 1.3;
 }
 /* 
 *
