@@ -24,7 +24,12 @@
     // Window Scroll
 
     var serviceMenuContent = $('.service-menu-content');
-    serviceMenuContent.hide();
+    var serviceActive = document.querySelector('.service-menu .active');
+
+    if(serviceActive == null) {
+        serviceMenuContent.hide();
+    }
+    
     $('.service-menu').click(function() {
         $('.service-menu .service').toggleClass('active');
         serviceMenuContent.toggle(500);
@@ -83,6 +88,15 @@
         adaptiveHeight: true,
         arrows: false,
         dots: true,
+        responsive: [
+            {
+            breakpoint: 991,
+            settings: {
+                centerMode: false,
+                infinite: true,
+            }
+            },
+        ]
     });
     // Testimonial Slider
 

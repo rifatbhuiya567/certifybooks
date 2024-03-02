@@ -475,7 +475,12 @@ body {
 
 .main-navbar .mega-menu-content li {
     width: 50%;
-    margin-top: 4px;
+    margin-top: 8px;
+}
+
+.main-navbar .mega-menu-content li:nth-child(1),
+.main-navbar .mega-menu-content li:nth-child(2) {
+    margin-top: 0;
 }
 
 .main-navbar .mega-menu-content li.active .service-icon,
@@ -1275,7 +1280,7 @@ body {
 }
 
 .blog-view .blog-img img {
-    height: 400px;
+    height: 540px;
     object-fit: cover;
     border-radius: var(--radius-md);
     -webkit-border-radius: var(--radius-md);
