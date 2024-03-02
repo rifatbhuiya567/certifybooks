@@ -17,6 +17,10 @@
 * 6) BTT CSS start
 * 7) Footer CSS start
 * 8) Service Page CSS start
+* 9) About CSS start
+* 10) Blog CSS start
+* 11) Blog view CSS start
+* 12) Contact CSS start
 */
 
 :root {
@@ -189,6 +193,22 @@ body {
 
 .section-heading-space {
     margin-top: 48px;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-70 {
+    width: 70%;
 }
 
 .bttn {
@@ -1163,5 +1183,298 @@ body {
 /* 
 *
 * CSS line break. Services page CSS end
+* 
+*/
+
+.about .content-img img {
+    box-shadow: .5px .5px 5px 0 rgba(0, 0, 0, .150);
+    border-radius: var(--radius-md);
+    -webkit-border-radius: var(--radius-md);
+    -moz-border-radius: var(--radius-md);
+    -ms-border-radius: var(--radius-md);
+    -o-border-radius: var(--radius-md);
+}
+
+.about-content ul,
+.about-content ol {
+    list-style-position: inside;
+    list-style-type: decimal;
+}
+
+.about-content li {
+    margin-top: 8px;
+}
+/* 
+*
+* CSS line break. About CSS end
+* 
+*/
+
+.blog.section-spacing {
+    padding: 40px 0;
+}
+
+.blog .blog-card {
+    margin-top: 24px;
+}
+
+.blog .blog-img img {
+    height: 240px;
+    border-radius: var(--radius-sm);
+    -webkit-border-radius: var(--radius-sm);
+    -moz-border-radius: var(--radius-sm);
+    -ms-border-radius: var(--radius-sm);
+    -o-border-radius: var(--radius-sm);
+}
+
+.blog .blog-content {
+    margin-top: 8px;
+}
+
+.blog .blog-content .title {
+    font-size: var(--h4);
+}
+
+.blog .blog-content .upload-date {
+    font-weight: 500;
+    display: inline-block;
+    margin: 4px 0 8px;
+    font-size: var(--sm);
+}
+
+.blog .blog-content .readmore-action {
+    margin-top: 8px;
+    font-weight: 600;
+    color: var(--primary_color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.blog .blog-content .readmore-action:hover {
+    color: var(--text_color);
+}
+
+.blog .blog-content .readmore-action:hover span {
+    text-decoration: underline;
+}
+
+.blog .blog-content .readmore-action i {
+    font-size: var(--sm);
+}
+/* 
+*
+* CSS line break. Blog CSS end
+* 
+*/
+
+.blog-view.section-spacing {
+    padding: 28px 0;
+}
+
+.blog-view .blog-img img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    -webkit-border-radius: var(--radius-md);
+    -moz-border-radius: var(--radius-md);
+    -ms-border-radius: var(--radius-md);
+    -o-border-radius: var(--radius-md);
+}
+
+.blog-view .title {
+    margin-top: 16px;
+}
+
+.blog-view .upload-date {
+    font-weight: 500;
+    display: inline-block;
+    margin: 8px 0 12px;
+    font-size: var(--sm);
+}
+
+.blog-view .description {
+    font-size: var(--lg);
+    margin-bottom: 12px;
+}
+
+.blog-view-content ul {
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+.blog-view-content ul li {
+    margin-top: 4px;
+}
+
+.blog-view-content ul li:first-child {
+    margin-top: 0;
+}
+
+.recent-post {
+    padding: 8px 16px;
+    background-color: var(--primary_thin_color);
+    border-radius: var(--radius-md);
+    -webkit-border-radius: var(--radius-md);
+    -moz-border-radius: var(--radius-md);
+    -ms-border-radius: var(--radius-md);
+    -o-border-radius: var(--radius-md);
+}
+
+.recent-post .heading {
+    font-weight: 600;
+    color: var(--primary_color);
+}
+
+.recent-post li {
+    margin-top: 8px;
+}
+
+.recent-post li:first-child {
+    margin-top: 0;
+}
+
+.recent-post ul li:nth-child(odd) a {
+    background-color: var(--white_color);
+}
+
+.recent-post li a {
+    border-radius: var(--radius-sm);
+    -webkit-border-radius: var(--radius-sm);
+    -moz-border-radius: var(--radius-sm);
+    -ms-border-radius: var(--radius-sm);
+    -o-border-radius: var(--radius-sm);
+}
+
+.recent-post li a img {
+    border-radius: var(--radius-sm);
+    -webkit-border-radius: var(--radius-sm);
+    -moz-border-radius: var(--radius-sm);
+    -ms-border-radius: var(--radius-sm);
+    -o-border-radius: var(--radius-sm);
+}
+
+.recent-post .blog-title {
+    font-weight: 500;
+    font-size: var(--sm);
+    color: var(--black_color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.recent-post li a:hover .blog-title {
+    text-decoration: underline;
+}
+/* 
+*
+* CSS line break. Blog view CSS end
+* 
+*/
+
+.contact-card {
+    padding: 20px 24px;
+    background-color: var(--gray_color);
+    border-radius: var(--radius-md);
+    -webkit-border-radius: var(--radius-md);
+    -moz-border-radius: var(--radius-md);
+    -ms-border-radius: var(--radius-md);
+    -o-border-radius: var(--radius-md);
+    box-shadow: .5px .5px 3px 0 rgba(0, 0, 0, .150);
+}
+
+.contact-card .heading {
+    font-size: var(--h5);
+    margin-bottom: 24px;
+}
+
+.contact-card .sub-heading {
+    font-size: var(--h6);
+    display: inline-block;
+    border-bottom: 2px solid var(--primary_color);
+}
+
+.contact-card .details {
+    margin-top: 8px;
+}
+
+.contact-card .details a {
+    font-weight: 500;
+    font-size: var(--sm);
+    color: var(--text_color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.contact-card .details a:hover span {
+    text-decoration: underline;
+}
+
+.contact-card .social {
+    margin-top: 4px;
+}
+
+.contact-card .social a {
+    color: var(--text_color);
+    font-size: 28px;
+    opacity: .9;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.contact-card .social a:hover {
+    opacity: .7;
+}
+
+.contact-form .form-label {
+    font-weight: 500;
+    margin-bottom: 2px !important;
+}
+
+.contact-form {
+    padding: 8px 12px;
+    background-color: var(--white_color);
+    border-radius: var(--radius-md);
+    -webkit-border-radius: var(--radius-md);
+    -moz-border-radius: var(--radius-md);
+    -ms-border-radius: var(--radius-md);
+    -o-border-radius: var(--radius-md);
+}
+
+.contact-form .form-action {
+    color: var(--white_color);
+    border: none;
+    padding: 8px 20px;
+    font-weight: 500;
+    font-size: var(--sm);
+    background-color: var(--primary_color);
+    border-radius: var(--radius-sm);
+    -webkit-border-radius: var(--radius-sm);
+    -moz-border-radius: var(--radius-sm);
+    -ms-border-radius: var(--radius-sm);
+    -o-border-radius: var(--radius-sm);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.contact-form .form-action:hover {
+    background-color: var(--text_color);
+}
+/* 
+*
+* CSS line break. Contact CSS end
 * 
 */
