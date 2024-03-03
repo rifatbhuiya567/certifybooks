@@ -424,6 +424,10 @@
         padding: 8px 32px;
     }
 
+    .page-action .bttn {
+        padding: 8px 20px;
+    }
+
     .blog-view .blog-img img {
         height: 340px;
     }
