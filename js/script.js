@@ -2,6 +2,7 @@
     "use strict";
 
     $(window).load(function () {
+        $(".preloader").delay(500).fadeOut(500);
         $(".btt i").hide();
     });
     // Window Load
