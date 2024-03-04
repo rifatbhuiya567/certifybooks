@@ -11,6 +11,12 @@
         --sm: 14px;
     }
 
+    .dots .dot {
+        width: 24px;
+        height: 24px;
+        margin: 0 6px;
+    }
+
     .banner-content {
         height: 560px;
     }
@@ -51,6 +57,12 @@
         --lg: 17px;
         --bs: 15px;
         --sm: 14px;
+    }
+
+    .dots .dot {
+        width: 20px;
+        height: 20px;
+        margin: 0 6px;
     }
 
     .section-heading-space {
@@ -165,6 +177,12 @@
         --lg: 16px;
         --bs: 15px;
         --sm: 14px;
+    }
+
+    .dots .dot {
+        width: 20px;
+        height: 20px;
+        margin: 0 2px;
     }
 
     .section-spacing {
@@ -328,6 +346,12 @@
         --lg: 16px;
         --bs: 15px;
         --sm: 14px;
+    }
+
+    .dots .dot {
+        width: 16px;
+        height: 16px;
+        margin: 0 2px;
     }
 
     .section-spacing {

@@ -9,18 +9,19 @@
 * Table Of Content
 *------------------
 * 0) Common CSS start
-* 1) Top header CSS start
-* 2) Navbar CSS start
-* 3) Banner CSS start
-* 4) Services CSS start
-* 5) Testimonial CSS start
-* 6) BTT CSS start
-* 7) Footer CSS start
-* 8) Service Page CSS start
-* 9) About CSS start
-* 10) Blog CSS start
-* 11) Blog view CSS start
-* 12) Contact CSS start
+* 1) Preloader CSS start
+* 2) Top header CSS start
+* 3) Navbar CSS start
+* 4) Banner CSS start
+* 5) Services CSS start
+* 6) Testimonial CSS start
+* 7) BTT CSS start
+* 8) Footer CSS start
+* 9) Service Page CSS start
+* 10) About CSS start
+* 11) Blog CSS start
+* 12) Blog view CSS start
+* 13) Contact CSS start
 */
 
 :root {
@@ -305,13 +306,17 @@ body {
   
 .dots .dot {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     margin: 0 10px 0 10px;
-    border-radius: 50%;
     background: var(--primary_color);
     -webkit-animation: dot-dot-dot 1.4s linear infinite;
     animation: dot-dot-dot 1.4s linear infinite;
+    border-radius: var(--radius-round);
+    -webkit-border-radius: var(--radius-round);
+    -moz-border-radius: var(--radius-round);
+    -ms-border-radius: var(--radius-round);
+    -o-border-radius: var(--radius-round);
 }
   
 .dots .dot:nth-child(2) {
