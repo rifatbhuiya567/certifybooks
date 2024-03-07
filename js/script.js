@@ -23,19 +23,6 @@
     });
     // Window Scroll
 
-    var serviceMenuContent = $('.service-menu-content');
-    var serviceActive = document.querySelector('.service-menu .active');
-
-    if(serviceActive == null) {
-        serviceMenuContent.hide();
-    }
-    
-    $('.service-menu').click(function() {
-        $('.service-menu .service').toggleClass('active');
-        serviceMenuContent.toggle(500);
-    });
-    // Responsive Menu
-
     $('.testimonial-slider').slick({
         centerMode: true,
         centerPadding: '80px',
