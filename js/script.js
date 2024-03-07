@@ -2,7 +2,6 @@
     "use strict";
 
     $(window).load(function () {
-        $(".preloader").delay(500).fadeOut(500);
         $(".btt i").hide();
     });
     // Window Load
@@ -16,7 +15,7 @@
             $(".btt i").fadeOut(500);
         }
         
-        if (scrolling > 140) {
+        if (scrolling > 100) {
             $(".main-navbar").addClass("scrolled");
         } else {
             $(".main-navbar").removeClass("scrolled");
@@ -37,48 +36,7 @@
     });
     // Responsive Menu
 
-    function bannerSlider() {
-        var myBannerSlider = $('.banner-slide');
-        myBannerSlider.on('init', function (e, slick) {
-            var $firstAnimatingElements = $('.banner-content:first-child').find('[data-animation]');
-            doAnimations($firstAnimatingElements);
-        });
-    
-        myBannerSlider.on('beforeChange', function (e, slick, currentSlide, nextSlide) {
-            var $animatingElements = $('.banner-content[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
-            doAnimations($animatingElements);
-        });
-    
-        myBannerSlider.slick({
-            autoplay: true,
-            autoplaySpeed: 7000,
-            speed: 1000,
-            dots: true,
-            fade: true,
-            arrows: false,
-        });
-    
-        function doAnimations(elements) {
-          var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-            elements.each(function () {
-                var $this = $(this);
-                var $animationDelay = $this.data('delay');
-                var $animationType = 'animated ' + $this.data('animation');
-                $this.css({
-                    'animation-delay': $animationDelay,
-                    '-webkit-animation-delay': $animationDelay
-                  });
-                $this.addClass($animationType).one(animationEndEvents, function () {
-                    $this.removeClass($animationType);
-                });
-            });
-        }
-    }
-    bannerSlider();
-    // Banner Slide
-
-    var testimonialSlider = $('.testimonial-slider');
-    testimonialSlider.slick({
+    $('.testimonial-slider').slick({
         centerMode: true,
         centerPadding: '80px',
         slidesToShow: 1,

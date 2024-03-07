@@ -1,535 +1,171 @@
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    :root {
-        --h1: 30px;
-        --h2: 28px;
-        --h3: 25px;
-        --h4: 22px;
-        --h5: 19px;
-        --h6: 17px;
-        --lg: 17px;
-        --bs: 16px;
-        --sm: 14px;
-    }
-
-    .dots .dot {
-        width: 24px;
-        height: 24px;
-        margin: 0 6px;
-    }
-
-    .banner-content {
-        height: 560px;
-    }
-
-    .btm-shape {
-        clip-path: polygon(50% 95%, 114% 0, 100% 100%, 0 100%, 0px 24px);
-    }
-
-    .service-card {
-        padding: 12px 12px;
-    }
-
-    .service-card .icon img {
-        width: 32px;
-    }
-
-    .service-card h3 {
-        font-size: var(--h4);
-    }
-
-    .blog .blog-img img {
-        height: 200px;
-    }
-
-    .blog-view .blog-img img {
-        height: 440px;
-    }
-}
-
 @media (min-width: 768px) and (max-width: 991.98px) {
     :root {
-        --h1: 28px;
-        --h2: 26px;
+        --h1: 30px;
+        --h2: 27px;
         --h3: 24px;
         --h4: 21px;
-        --h5: 18px;
+        --h5: 19px;
         --h6: 17px;
         --lg: 17px;
         --bs: 15px;
         --sm: 14px;
     }
 
-    .dots .dot {
-        width: 20px;
-        height: 20px;
-        margin: 0 6px;
-    }
-
-    .section-heading-space {
-        margin-top: 32px;
+    .bttn {
+        padding: 8px 16px;
+        font-weight: 500;
     }
 
     .main-navbar .header-logo img {
-        width: 220px;
+        width: 180px;
     }
 
-    .banner-content {
-        height: 460px;
+    .main-navbar .navigation-menu a {
+        padding: 24px 8px;
     }
 
-    .btm-shape {
-        clip-path: polygon(50% 95%, 126% 0, 100% 100%, 0 100%, 0px 40px);
-    }
-
-    .testimonial-card {
-        margin: 0 12px;
-        padding: 28px 48px;
-    }
-
-    .left-quotation-mark, .right-quotation-mark {
-        font-size: 22px;
-    }
-
-    .client-details img {
-        width: 60px;
-    }
-
-    .bttn {
-        padding: 8px 32px;
-    }
-
-    .blog-view .blog-img img {
-        height: 340px;
+    .main-banner {
+        padding: 52px 0;
     }
 }
 
 @media (max-width: 991.98px) {
-    .top-header {
-        display: none;
-    }
-
-    .main-navbar {
-        padding: 12px 0;
-    }
-
-    .main-navbar .desktop.navigation-menu {
-        display: none;
-    }
-
-    .main-navbar .solid-bar {
-        display: block;
-    }
-
-    .banner-content .col-xxl-5 {
-        display: none;
-    }
-
-    .banner-slide .slick-dots {
+    .top-header .opening-hour {
         display: none !important;
     }
 
-    .service-card h3 {
-        font-size: var(--h4);
+    .banner-content h1 {
+        font-size: var(--h1);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .top-header a {
+        font-weight: 400;
     }
 
-    .footer-logo img {
-        width: 200px;
+    .top-header a.gap-2 {
+        gap: 4px !important;
+    }
+    
+    .main-navbar .navigation-menu {
+        margin-top: 16px;
+        justify-content: center;
     }
 
-    .testimonial-dots .slick-dots {
-        margin-top: 12px;
+    .main-navbar .navigation-menu a {
+        padding: 6px 12px;
+        font-weight: 500;
+        font-size: var(--bs);
+        border-bottom: none !important;
     }
 
-    .blog-view .col-xxl-3 {
-        display: none;
+    .main-navbar .navigation-menu a.active, 
+    .main-navbar .navigation-menu a:hover {
+        color: var(--white_color) !important;
+        background-color: var(--primary_color) !important;
+        border-bottom: none !important;
+        border-radius: var(--radius-sm);
+        -webkit-border-radius: var(--radius-sm);
+        -moz-border-radius: var(--radius-sm);
+        -ms-border-radius: var(--radius-sm);
+        -o-border-radius: var(--radius-sm);
     }
 
-    .contact-card .d-flex {
-        flex-wrap: wrap;
-    }
-
-    .contact-card .d-flex .w-40,
-    .contact-card .d-flex .w-60 {
-        width: 100%;
-    }
-
-    .contact-card .d-flex .w-40 {
+    .page-footer {
+        padding: 20px 0;
         text-align: center;
     }
 
-    .contact-card .heading {
-        margin-bottom: 16px;
+    .page-footer .social {
+        justify-content: center;
     }
 
-    .contact-card .social {
-        justify-content: center;
+    .page-footer .social a {
+        font-size: 22px;
+    }
+
+    .page-footer .social li:last-child a {
+        font-size: 19px;
+    }
+
+    .page-footer .col-md-4:first-child {
+        order: 2;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .page-footer .address li {
+        margin-top: 0;
+    }
+
+    .page-footer .address {
+        margin-top: 0;
+    }
+
+    .copyright {
+        padding: 8px 0;
+        font-weight: 400;
+    }
+
+    .btt {
+        display: none;
+    }
+
+    .section-heading h2 {
+        font-weight: 500;
+        padding-left: 12px;
+    }
+
+    .section-heading h2::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: 16px solid var(--primary_color);
+        border-right: 16px solid transparent;
+    }
+
+    .service-card {
+        margin-top: 16px;
+    }
+
+    .banner-content p {
+        font-weight: 400;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     :root {
-        --h1: 25px;
-        --h2: 23px;
+        --h1: 27px;
+        --h2: 24px;
         --h3: 22px;
-        --h4: 20px;
-        --h5: 17px;
-        --h6: 16px;
-        --lg: 16px;
-        --bs: 15px;
-        --sm: 14px;
-    }
-
-    .dots .dot {
-        width: 20px;
-        height: 20px;
-        margin: 0 2px;
-    }
-
-    .section-spacing {
-        padding: 24px 0;
-    }
-
-    .blog.section-spacing {
-        padding: 24px 0;
-    }
-
-    .section-heading-space {
-        margin-top: 24px;
-    }
-
-    .section-heading h2::after {
-        border-top: 16px solid var(--primary_color);
-        border-right: 16px solid transparent;
-    }
-
-    .page-breadcrumb {
-        padding: 24px 0;
-    }
-
-    .main-navbar .header-logo img {
-        width: 200px;
-    }
-
-    .banner-content {
-        height: 400px;
-    }
-
-    .banner-content p {
-        margin: 8px 0 16px;
-        font-size: var(--lg);
-    }
-
-    .btm-shape {
-        clip-path: polygon(50% 95%, 140% 0, 100% 100%, 0 100%, 0px 50px);
-    }
-
-    .service-card {
-        padding: 12px 12px;
-    }
-
-    .services a {
-        margin-top: 40px;
-    }
-
-    .service-card .icon img {
-        width: 28px;
-    }
-
-    .service-card h3 {
-        padding-top: 28px;
-    }
-
-    .service-card p {
-        padding-top: 2px;
-        padding-bottom: 4px;
-    }
-
-    .testimonial-card {
-        margin: 0 12px;
-        padding: 28px 48px;
-    }
-
-    .left-quotation-mark, .right-quotation-mark {
-        font-size: 22px;
-    }
-
-    .client-details img {
-        width: 48px;
-    }
-
-    .bttn {
-        padding: 8px 32px;
-    }
-
-    .blog-view .blog-img img {
-        height: 340px;
-    }
-
-    .page-action {
-        padding: 16px 0;
-    }
-
-    .page-action .title {
-        font-size: var(--h4);
-    }
-
-    .page-action .sub-title {
-        font-size: var(--h6);
-    }
-
-    .page-footer nav li {
-        width: 33%;
-    }
-
-    .page-footer .social {
-        justify-content: center;
-    }
-
-    .page-footer .col-md-4:nth-child(1) {
-        order: 2;
-        text-align: center;
-    }
-
-    .page-footer .col-md-4:nth-child(2) {
-        order: 3;
-        margin-top: 12px;
-        display: none;
-    }
-
-    .page-footer .col-md-4:nth-child(3) {
-        text-align: center;
-    }
-
-    .footer-logo {
-        display: none;
-    }
-
-    .page-footer h4 {
-        margin: 0px 0 8px;
-    }
-
-    .page-footer .address {
-        margin-top: 0;
-    }
-
-    .service-page-content .col-md-5 {
-        display: none;
-    }
-
-    .about-content {
-        margin-top: 16px;
-    }
-
-    .about .section-heading-space {
-        margin-top: 20px;
-    }
-
-    .blog .blog-img img {
-        height: 300px;
-    }
-
-    .btt i {
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    :root {
-        --h1: 24px;
-        --h2: 22px;
-        --h3: 21px;
         --h4: 19px;
-        --h5: 17px;
+        --h5: 18px;
         --h6: 16px;
         --lg: 16px;
         --bs: 15px;
-        --sm: 14px;
+        --sm: 13px;
     }
 
-    .dots .dot {
-        width: 16px;
-        height: 16px;
-        margin: 0 2px;
-    }
-
-    .section-spacing {
-        padding: 24px 0;
-    }
-
-    .blog.section-spacing {
-        padding: 0 0 24px;
-    }
-
-    .section-heading-space {
-        margin-top: 24px;
-    }
-
-    .section-heading h2::after {
-        border-top: 16px solid var(--primary_color);
-        border-right: 16px solid transparent;
-    }
-
-    .page-breadcrumb {
-        padding: 24px 0;
-    }
-
-    #responsivemenu {
-        width: 100%;
+    .bttn {
+        padding: 8px 16px;
+        font-weight: 500;
     }
 
     .main-navbar .header-logo img {
-        width: 200px;
+        width: 172px;
     }
 
-    .banner-content {
-        height: 380px;
-    }
-
-    .banner-content::before {
-        clip-path: polygon(50% 100%, 100% 100%, 100% 100%, 0 100%, 0 100%);
+    .main-banner {
+        padding: 48px 0;
     }
 
     .banner-content p {
         margin: 8px 0 16px;
-        font-size: var(--lg);
-    }
-
-    .btm-shape {
-        display: none;
-    }
-
-    .services .col-6 {
-        padding: 0 4px;
-    }
-
-    .service-card {
-        padding: 12px 4px;
-    }
-
-    .services a {
-        margin-top: 40px;
-    }
-
-    .service-card .icon img {
-        width: 22px;
-    }
-
-    .service-card .icon {
-        padding: 8px;
-    }
-
-    .service-card h3 {
-        padding-top: 16px;
-        font-size: var(--h5);
-    }
-
-    .service-card p {
-        padding-top: 2px;
-        padding-bottom: 2px;
-        font-size: var(--sm);
-    }
-
-    .testimonial-card {
-        margin: 0 12px;
-        padding: 20px 24px;
-    }
-
-    .left-quotation-mark, .right-quotation-mark {
-        display: none;
-    }
-
-    .client-details img {
-        width: 48px;
-    }
-
-    .bttn {
-        padding: 8px 32px;
-    }
-
-    .page-action .bttn {
-        padding: 8px 20px;
-    }
-
-    .blog-view .blog-img img {
-        height: 340px;
-    }
-
-    .page-action {
-        padding: 16px 0;
-    }
-
-    .page-action .title {
-        font-size: var(--h4);
-    }
-
-    .page-action .sub-title {
-        font-size: var(--h6);
-    }
-
-    .page-footer nav li {
-        width: 33%;
-    }
-
-    .page-footer .social {
-        justify-content: center;
-    }
-
-    .page-footer .col-md-4:nth-child(1) {
-        order: 2;
-        text-align: center;
-    }
-
-    .page-footer .col-md-4:nth-child(2) {
-        order: 3;
-        margin-top: 12px;
-        display: none;
-    }
-
-    .page-footer .col-md-4:nth-child(3) {
-        text-align: center;
-    }
-
-    .footer-logo {
-        display: none;
-    }
-
-    .page-footer h4 {
-        margin: 0px 0 8px;
-    }
-
-    .page-footer .address {
-        margin-top: 0;
-    }
-
-    .service-page-content .col-md-5 {
-        display: none;
-    }
-
-    .about-content {
-        margin-top: 16px;
-    }
-
-    .about .section-heading-space {
-        margin-top: 20px;
-    }
-
-    .blog .blog-img img {
-        height: 280px;
-    }
-
-    .btt i {
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-    }
-
-    .contact-card {
-        padding: 16px 16px;
-    }
-
-    .copyright {
-        padding: 8px 0;
     }
 }
