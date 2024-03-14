@@ -65,11 +65,6 @@
         color: var(--white_color) !important;
         background-color: var(--primary_color) !important;
         border-bottom: none !important;
-        border-radius: var(--radius-sm);
-        -webkit-border-radius: var(--radius-sm);
-        -moz-border-radius: var(--radius-sm);
-        -ms-border-radius: var(--radius-sm);
-        -o-border-radius: var(--radius-sm);
     }
 
     .page-footer {
@@ -137,6 +132,32 @@
     .banner-content p {
         font-weight: 400;
     }
+
+    .about .content-img {
+        margin-bottom: 12px;
+    }
+
+    .blog .blog-img img {
+        height: 140px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .blog.section-spacing {
+        padding: 12px 0;
+    }
+
+    .contact-card .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .contact-card .d-flex .w-40 {
+        display: none;
+    }
+
+    .contact-card .d-flex .w-60 {
+        width: 100%;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -152,13 +173,56 @@
         --sm: 13px;
     }
 
+    .section-spacing {
+        padding: 32px 0;
+    }
+
     .bttn {
-        padding: 8px 16px;
+        padding: 8px 12px;
         font-weight: 500;
     }
 
     .main-navbar .header-logo img {
         width: 172px;
+    }
+
+    .main-banner {
+        padding: 48px 0;
+    }
+
+    .banner-content p {
+        margin: 8px 0 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --h1: 25px;
+        --h2: 22px;
+        --h3: 21px;
+        --h4: 18px;
+        --h5: 17px;
+        --h6: 16px;
+        --lg: 16px;
+        --bs: 15px;
+        --sm: 13px;
+    }
+
+    .top-header {
+        display: none;
+    }
+
+    .section-spacing {
+        padding: 32px 0;
+    }
+
+    .bttn {
+        padding: 6px 12px;
+        font-weight: 400;
+    }
+
+    .main-navbar .header-logo img {
+        width: 160px;
     }
 
     .main-banner {
