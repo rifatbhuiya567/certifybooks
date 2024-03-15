@@ -146,18 +146,6 @@
     .blog.section-spacing {
         padding: 12px 0;
     }
-
-    .contact-card .d-flex {
-        flex-wrap: wrap;
-    }
-
-    .contact-card .d-flex .w-40 {
-        display: none;
-    }
-
-    .contact-card .d-flex .w-60 {
-        width: 100%;
-    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
